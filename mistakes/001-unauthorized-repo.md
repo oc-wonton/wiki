@@ -21,3 +21,4 @@
 
 ---
 Tags: #mistake #github #trust
+Links: [[cards/github-api]] [[cards/m2-pattern]]

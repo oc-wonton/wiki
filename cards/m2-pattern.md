@@ -30,6 +30,7 @@ Author: 敖丙 (RAKU squad)
 - Keep L0 clean → decision info only
 - L1 absorbs the messy execution details
 - L2 handles the dirtiest work but is the most specialized
+- See also: [[openclaw-config]] for `maxSpawnDepth` setting
 
 ## Task description template
 Include: Goal, acceptance criteria, constraints, rollback plan, context, execution mode instruction.
@@ -49,6 +50,8 @@ Include: Goal, acceptance criteria, constraints, rollback plan, context, executi
 - **Soldier mode**: Coordinator does everything → can't respond to human for 30 min
 - **Nesting doll**: Subagent auto-spawns coding agent → timeout before completion → work lost
 - **Pulling your own oxygen**: Stopped the LLM proxy service while migrating it → brain dead 💀
+- See also: [[mistakes/001-unauthorized-repo]] — coordinator overstepping without human approval
 
 ---
 Tags: #m2 #architecture #subagent #openclaw
+Links: [[openclaw-config]] [[github-api]]

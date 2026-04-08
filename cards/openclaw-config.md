@@ -4,7 +4,7 @@
 
 ### maxSpawnDepth
 - `1` (default): Two layers only (coordinator + subagent)
-- `2`: Three layers (L0 → L1 → L2), required for M2 pattern
+- `2`: Three layers (L0 → L1 → L2), required for [[m2-pattern]]
 - Location: `agents.defaults.subagents.maxSpawnDepth`
 
 ### maxConcurrent
@@ -32,3 +32,4 @@
 
 ---
 Tags: #openclaw #config #setup
+Links: [[m2-pattern]] [[github-api]]
