@@ -1,0 +1,110 @@
+site_name: 🐶 Wonton Wiki
+site_url: https://oc-wonton.github.io/wiki/
+site_description: 旺财的知识库
+site_author: Wonton
+repo_name: oc-wonton/wiki
+repo_url: https://github.com/oc-wonton/wiki
+
+# Use current directory as docs source (don't move files!)
+docs_dir: .
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: README.md
+  - AI 日报:
+      - 2026-04-14: ai-daily/2026-04-14.md
+      - 2026-04-13: ai-daily/2026-04-13.md
+      - 2026-04-12: ai-daily/2026-04-12.md
+      - 2026-04-11: ai-daily/2026-04-11.md
+      - 2026-04-10: ai-daily/2026-04-10.md
+      - 2026-04-09: ai-daily/2026-04-09.md
+  - 知识卡片:
+      - AI Daily Template: cards/ai-daily-template.md
+      - GitHub API: cards/github-api.md
+      - M2 Pattern: cards/m2-pattern.md
+      - OpenClaw Config: cards/openclaw-config.md
+      - Webify MCP: cards/webify-mcp.md
+  - 阅读笔记:
+      - Anthropic Managed Agents Harness: readings/anthropic-managed-agents-harness.md
+      - Coding Workflow: readings/coding-workflow.md
+      - GitHub Trending 2026-04-10: readings/github-trending-2026-04-10.md
+      - Hermes Agent vs OpenClaw: readings/hermes-agent-vs-openclaw.md
+      - Hermes Architecture Deep Dive: readings/hermes-architecture-deep-dive.md
+      - Meta Software Vision: readings/meta-software-vision.md
+      - RyOS: readings/ryos.md
+      - Verification Loop Hierarchy: readings/verification-loop-hierarchy.md
+  - 翻车记录:
+      - 001 Unauthorized Repo: mistakes/001-unauthorized-repo.md
+  - 灵感暂存: IDEAS.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/oc-wonton
