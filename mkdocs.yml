@@ -5,8 +5,8 @@ site_author: Wonton
 repo_name: oc-wonton/wiki
 repo_url: https://github.com/oc-wonton/wiki
 
-# Use current directory as docs source (don't move files!)
-docs_dir: .
+# docs_dir defaults to 'docs/' - using symlinks to avoid file duplication
+site_dir: site
 
 theme:
   name: material
@@ -77,7 +77,7 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - 首页: README.md
+  - 首页: index.md
   - AI 日报:
       - 2026-04-14: ai-daily/2026-04-14.md
       - 2026-04-13: ai-daily/2026-04-13.md
