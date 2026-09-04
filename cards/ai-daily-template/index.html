@@ -792,6 +792,28 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
+        核心源（每天必须检查）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常规源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         可选扩展源
       
     </span>
@@ -805,13 +827,63 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        采集策略
+        增量采集与去重策略
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="增量采集与去重策略">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        持久化账本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        唯一键规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        每日流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        时间窗口
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1397,6 +1469,28 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
+        核心源（每天必须检查）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常规源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         可选扩展源
       
     </span>
@@ -1410,13 +1504,63 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        采集策略
+        增量采集与去重策略
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="增量采集与去重策略">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        持久化账本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        唯一键规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        每日流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        时间窗口
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1483,6 +1627,39 @@
 </span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>来源：Twitter/X · GitHub Trending · Hacker News · Product Hunt · AI 公司博客
 </span></code></pre></div>
 <h2 id="_2">数据源配置<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">核心源（每天必须检查）<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>数据源</th>
+<th>URL / 方式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub Trending</td>
+<td>https://github.com/trending?since=daily</td>
+<td>记录仓库全名；同一仓库不因连续上榜而重复推送</td>
+</tr>
+<tr>
+<td>Anthropic News</td>
+<td>https://www.anthropic.com/news</td>
+<td>官方新闻与研究发布</td>
+</tr>
+<tr>
+<td>Anthropic Engineering</td>
+<td>https://www.anthropic.com/engineering</td>
+<td>工程实践与技术文章</td>
+</tr>
+<tr>
+<td>Claude Blog</td>
+<td>https://claude.com/blog</td>
+<td>Claude 产品、开发实践与使用指南</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">常规源<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1498,11 +1675,6 @@
 <td>热门帖子</td>
 </tr>
 <tr>
-<td>GitHub Trending</td>
-<td>https://github.com/trending?since=daily</td>
-<td>每日趋势项目</td>
-</tr>
-<tr>
 <td>Product Hunt</td>
 <td>https://www.producthunt.com</td>
 <td>每日新品</td>
@@ -1515,11 +1687,6 @@
 <tr>
 <td>OpenAI Blog</td>
 <td>https://openai.com/blog</td>
-<td></td>
-</tr>
-<tr>
-<td>Anthropic Blog</td>
-<td>https://www.anthropic.com/news</td>
 <td></td>
 </tr>
 <tr>
@@ -1549,7 +1716,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_3">可选扩展源<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_5">可选扩展源<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1591,12 +1758,35 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_4">采集策略<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_6">增量采集与去重策略<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">持久化账本<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <ul>
-<li>数据源列表可在此文件中增减</li>
-<li>每个源标注优先级（核心/扩展）</li>
-<li>cron 触发后按优先级依次采集</li>
-<li>采集失败跳过，不阻塞整体流程</li>
+<li>使用 <code>wiki/ai-daily/seen-items.jsonl</code> 保存<strong>已经向彦祖推送过</strong>的条目，一行一个 JSON 对象。</li>
+<li>字段至少包含：<code>key</code>、<code>title</code>、<code>url</code>、<code>source</code>、<code>firstSentAt</code>。</li>
+<li>账本是长期历史，不按天清空；写入前先检查，禁止重复 <code>key</code>。</li>
+<li>如果账本不存在，先扫描 <code>wiki/ai-daily/*.md</code> 历史日报，将能识别出的链接、GitHub 仓库和标题写入账本，再开始生成当天日报。</li>
+</ul>
+<h3 id="_8">唯一键规则<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>按以下优先级生成 <code>key</code>：
+1. GitHub 项目：<code>github:&lt;owner&gt;/&lt;repo&gt;</code>，统一转小写并移除末尾 <code>/</code>。
+2. 有文章链接：规范化 URL；移除 <code>utm_*</code>、<code>ref</code> 等跟踪参数、fragment 和末尾 <code>/</code>，生成 <code>url:&lt;normalized-url&gt;</code>。
+3. 没有稳定链接：<code>title:&lt;source&gt;:&lt;normalized-title&gt;</code>；标题转小写、压缩空白并移除纯标点差异。</p>
+<h3 id="_9">每日流程<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ol>
+<li>读取 <code>seen-items.jsonl</code>，建立已推送 key 集合。</li>
+<li><strong>每天必须检查所有核心源</strong>，再按优先级检查常规源和扩展源。</li>
+<li>为候选内容记录标题、原始 URL、来源、发布日期和 key。</li>
+<li>排除账本中已有 key；同一事件被多个媒体转载时合并为一条，以官方原始链接为准。</li>
+<li>只保留有实际信息增量、且值得彦祖关注的内容；“仍在 Trending”不算更新，项目发布新版本或新增重要能力才算新事件。</li>
+<li>生成并发送日报后，<strong>仅将实际发送的条目</strong>追加到 <code>seen-items.jsonl</code>。写文件或发送失败时不要更新账本。</li>
+<li>如果没有重要增量，只发送简短的“今日无值得推送的重要 AI 更新”，不得用旧内容或低价值内容凑数。</li>
+<li>采集失败的源跳过并在内部记录，不用旧缓存冒充今日更新，也不阻塞其他源。</li>
+</ol>
+<h3 id="_10">时间窗口<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>有明确发布时间的新闻、博客和论文，默认只考虑上次成功运行后发布的内容；首次建账时最多回看 72 小时。</li>
+<li>GitHub Trending 没有可靠发布时间，以“仓库是否从未推送过”为增量判断。</li>
+<li>旧事件出现真正的新进展时可再次报道，但必须使用代表新进展的新文章 URL，并在正文中明确说明新增了什么。</li>
 </ul>
 
 
