@@ -1546,3 +1546,5 @@
 {"key":"url:https://withspecific.com/benchmarks/real-swe","title":"Real-SWE 用私有生产代码库测试 Coding Agent","url":"https://withspecific.com/benchmarks/real-swe","source":"Specific Labs / Hacker News","firstSentAt":"2026-09-14T01:00:00Z"}
 {"key":"url:https://www.vals.ai/blogs/fable-solves-cyphral-distich","title":"Claude Fable 5.1 解开 Cyphral Distich","url":"https://www.vals.ai/blogs/fable-solves-cyphral-distich","source":"Vals AI / Hacker News","firstSentAt":"2026-09-14T01:00:00Z"}
 {"key":"github:justvugg/colibri","title":"Colibri v1.11.0 发布并首次进入日报账本","url":"https://github.com/JustVugg/colibri","source":"GitHub Trending","firstSentAt":"2026-09-14T01:00:00Z"}
+{"key":"url:https://andonlabs.com/blog/why-we-built-pion","title":"Pion 开放研究预览：让持久 Agent 直接运营真实企业","url":"https://andonlabs.com/blog/why-we-built-pion","source":"Andon Labs / Hacker News","firstSentAt":"2026-09-15T01:00:00Z"}
+{"key":"github:multimodal-art-projection/yue","title":"YuE2 开源：可编辑符号乐谱驱动的音乐生成","url":"https://github.com/multimodal-art-projection/YuE","source":"GitHub Trending / YuE2","firstSentAt":"2026-09-15T01:00:00Z"}
