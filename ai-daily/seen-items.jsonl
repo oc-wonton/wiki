@@ -1562,3 +1562,6 @@
 {"key":"github:tencent/browserskill","title":"腾讯 BrowserSkill 首次进入 GitHub Trending","url":"https://github.com/Tencent/BrowserSkill","source":"GitHub Trending / Tencent","firstSentAt":"2026-09-18T01:00:00Z"}
 {"key":"url:https://github.com/anthropics/claude-code/releases/tag/v2.1.277","title":"Claude Code 2.1.277 原生支持 AGENTS.md","url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.277","source":"Claude Code / Anthropic","firstSentAt":"2026-09-19T01:00:00Z"}
 {"key":"url:https://prismml.com/news/bonsai-2-27b","title":"PrismML 发布 Ternary Bonsai 2 27B","url":"https://prismml.com/news/bonsai-2-27b","source":"PrismML / Hacker News","firstSentAt":"2026-09-19T01:00:00Z"}
+{"key":"url:https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload","title":"ZCode 被发现曾默认上传工作区与完整 Git 历史，官方称已修复","url":"https://blog.ferstar.org/en/posts/zcode-silent-workspace-snapshot-upload/","source":"Ferstar / Hacker News","firstSentAt":"2026-09-20T01:00:00Z"}
+{"key":"url:https://arxiv.org/abs/2609.20804","title":"176 组对照实验拆解 Coding Agent harness","url":"https://arxiv.org/abs/2609.20804","source":"ArXiv / Hacker News","firstSentAt":"2026-09-20T01:00:00Z"}
+{"key":"url:https://cactuscompute.com/needle","title":"Needle 3 把端侧工具调用模型压到 8–29MB","url":"https://cactuscompute.com/needle","source":"Cactus Compute / Hacker News","firstSentAt":"2026-09-20T01:00:00Z"}
