@@ -1567,3 +1567,7 @@
 {"key":"url:https://cactuscompute.com/needle","title":"Needle 3 把端侧工具调用模型压到 8–29MB","url":"https://cactuscompute.com/needle","source":"Cactus Compute / Hacker News","firstSentAt":"2026-09-20T01:00:00Z"}
 {"key":"url:https://qwen.ai/blog?id=qwen-image-2.1","title":"Qwen 发布 Qwen-Image-2.1：7B 视觉生成组件统一生成、编辑与透明图层","url":"https://qwen.ai/blog?id=qwen-image-2.1","source":"Qwen / Hacker News","firstSentAt":"2026-09-21T01:00:00Z"}
 {"key":"url:https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector","title":"研究者披露 ChatGPT 广告像素可把站外浏览事件关联到 ChatGPT 身份","url":"https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/","source":"Buchodi / Hacker News / OpenAI Docs","firstSentAt":"2026-09-21T01:00:00Z"}
+{"key":"url:https://mimo.xiaomi.com/mimo-v2-6","title":"小米开源 MiMo-V2.6：1T MoE、原生全模态、百万上下文","url":"https://mimo.xiaomi.com/mimo-v2-6","source":"Xiaomi MiMo","firstSentAt":"2026-09-22T01:00:00Z"}
+{"key":"url:https://x.ai/news/grok-4-7","title":"xAI 发布 Grok 4.7","url":"https://x.ai/news/grok-4-7","source":"xAI","firstSentAt":"2026-09-22T01:00:00Z"}
+{"key":"url:https://huggingface.co/blog/tokenizers-v1","title":"Hugging Face tokenizers v1 发布候选版","url":"https://huggingface.co/blog/tokenizers-v1","source":"Hugging Face","firstSentAt":"2026-09-22T01:00:00Z"}
+{"key":"github:google/ax","title":"Google 开源 AX：面向 Agent 工作负载的声明式编排器","url":"https://github.com/google/ax","source":"Google AX / GitHub","firstSentAt":"2026-09-22T01:00:00Z"}
