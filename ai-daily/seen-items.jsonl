@@ -1571,3 +1571,4 @@
 {"key":"url:https://x.ai/news/grok-4-7","title":"xAI 发布 Grok 4.7","url":"https://x.ai/news/grok-4-7","source":"xAI","firstSentAt":"2026-09-22T01:00:00Z"}
 {"key":"url:https://huggingface.co/blog/tokenizers-v1","title":"Hugging Face tokenizers v1 发布候选版","url":"https://huggingface.co/blog/tokenizers-v1","source":"Hugging Face","firstSentAt":"2026-09-22T01:00:00Z"}
 {"key":"github:google/ax","title":"Google 开源 AX：面向 Agent 工作负载的声明式编排器","url":"https://github.com/google/ax","source":"Google AX / GitHub","firstSentAt":"2026-09-22T01:00:00Z"}
+{"key": "github:nandhakishorm/laya", "title": "Laya：开源、自托管的非自回归 System 1 决策模型", "url": "https://github.com/NandhaKishorM/laya", "source": "GitHub Trending / Hacker News", "firstSentAt": "2026-09-22T02:11:41Z"}
