@@ -1412,6 +1412,8 @@
 <ul>
 <li><strong><a href="https://github.com/google/ax">Google 开源 AX：面向 Agent 工作负载的声明式编排器</a></strong> — AX 把 Task、Workspace、Gateway、Model 作为核心资源，提供沙箱、网络 egress allowlist、MCP/skills 预热、暂停/恢复和调试入口；CLI 与 manifest 设计刻意接近 Kubernetes，底层基于 Agent Substrate，采用 Apache-2.0。</li>
 <li>AX 的定位与普通 batch job 不同：它明确处理有状态、长时间等待、突发计算且可能失控烧钱的 Agent。官方宣称单集群可扩展到十亿级任务并可亚秒恢复，但仓库同时标注 <code>v1alpha1</code>、稳定版前可能出现重大 breaking changes；现阶段更适合架构研究和小规模 PoC，不宜直接押生产。</li>
+<li><strong><a href="https://github.com/NandhaKishorM/laya">Laya：开源、自托管的非自回归 System 1 决策模型</a></strong> — 仓库于 9 月 18 日创建，四天内增长到约 10.7k stars、879 forks，并连续发布至 v0.3.5。它使用 ModernBERT/mmBERT Encoder 一次并行输出 choice、ordinal score 或二元概率，目标是用几十毫秒的本地推理替代大模型完成分类、路由、风险评分和 guardrail。</li>
+<li>Laya 的热度值得关注，但不能照单全收其 Benchmark：基础 checkpoint 在 typed-decisions zero-shot 上接近随机且低于多数类基线，0.766 结果来自针对同类 Workflow 的 fine-tune；多语言模型默认也未完成概率校准。更准确的定位是“可用业务数据专门化的高速决策底座”，而不是开箱即用的通用 Agent。</li>
 <li>GitHub Trending 已检查。<code>trycua/cua</code> 和 <code>ai-memory</code> 属于历史已推送或连续上榜，不重复；<code>BuilderIO/agent-native</code> 虽首次进入当前榜单，但仓库并非本时间窗口内的新发布，未仅因热度入选。AX 使用 <code>google/ax</code> 仓库作为稳定唯一键。</li>
 <li>Hacker News 今日高热 AI 项包括 MiMo-V2.6、Grok 4.7 与 AX；昨日已推送的 Qwen-Image-2.1 和 ChatGPT 广告像素披露仍在榜，不重复。</li>
 </ul>
@@ -1421,6 +1423,7 @@
 <li><strong>优先做 MiMo-V2.6 API 小测，而不是尝试自托管。</strong> 1.02T/42B activated 的官方部署示例需要多机多卡；但 API 的 Pro 输出价仅 $0.87/M token，可先用 20–30 个 OpenClaw 真实任务，对比当前模型的工具调用正确率、长任务恢复、视觉输入与总成本。</li>
 <li><strong>把 AX 的四资源抽象加入 OpenClaw 架构对照。</strong> Task/Workspace/Gateway/Model 与我们现有 session、sandbox、tool policy、model config 有明显映射；先读设计文档，挑“网络白名单 + suspend/resume”做概念差异表，不急着引入其 Kubernetes/Agent Substrate 全栈。</li>
 <li><strong>若有 Rust/Python 高吞吐推理服务，再评估 tokenizers v1 RC。</strong> 用真实 OpenClaw 长上下文与工具轨迹跑 v0.23/v1 A/B，至少同时测吞吐、P95 延迟、内存和 token ID 一致性；普通低并发聊天不值得为了理论峰值提前承担 RC 风险。</li>
+<li><strong>把 Laya 作为低成本前置路由器做小型评测，而不是直接接生产。</strong> 可选 PR 风险分类、Agent 轨迹 <code>needs_review</code> 或日报候选粗筛，使用独立 train/calibration/test 划分，对比规则、<code>gpt-5.6-sol-fast</code> 与 Laya 的 F1、Brier、ECE、P95 和每千次成本。</li>
 <li>Grok 4.7 已可通过第三方 harness/routers 使用，适合纳入一次价格敏感型 coding eval；先验证真实仓库任务和失败恢复，不按厂商 benchmark 直接替换默认模型。</li>
 </ul>
 <hr />
@@ -1429,7 +1432,7 @@
 <p>今天真正的信号不是又多了两个“最强模型”，而是开放权重、可复现 Agent RL、低价 API 与专用编排基础设施开始同时成熟，竞争正从单次回答转向整条长任务系统。</p>
 </blockquote>
 <hr />
-<p>来源：GitHub Trending · Anthropic News · Anthropic Engineering · Claude Blog · Hacker News · Product Hunt · OpenAI · Google AI · Hugging Face · ArXiv · 36氪 · 量子位 · Xiaomi MiMo · xAI · Google AX</p>
+<p>来源：GitHub Trending · Anthropic News · Anthropic Engineering · Claude Blog · Hacker News · Product Hunt · OpenAI · Google AI · Hugging Face · ArXiv · 36氪 · 量子位 · Xiaomi MiMo · xAI · Google AX · Laya</p>
 
 
 

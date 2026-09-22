@@ -853,7 +853,7 @@
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        唯一键规则
+        候选观察队列
       
     </span>
   </a>
@@ -864,7 +864,7 @@
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        每日流程
+        唯一键规则
       
     </span>
   </a>
@@ -873,6 +873,17 @@
         
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        每日流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         时间窗口
@@ -1530,7 +1541,7 @@
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        唯一键规则
+        候选观察队列
       
     </span>
   </a>
@@ -1541,7 +1552,7 @@
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        每日流程
+        唯一键规则
       
     </span>
   </a>
@@ -1550,6 +1561,17 @@
         
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        每日流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         时间窗口
@@ -1766,26 +1788,37 @@
 <li>账本是长期历史，不按天清空；写入前先检查，禁止重复 <code>key</code>。</li>
 <li>如果账本不存在，先扫描 <code>wiki/ai-daily/*.md</code> 历史日报，将能识别出的链接、GitHub 仓库和标题写入账本，再开始生成当天日报。</li>
 </ul>
-<h3 id="_8">唯一键规则<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h3 id="_8">候选观察队列<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>使用 <code>wiki/ai-daily/candidate-items.jsonl</code> 保存<strong>已发现但尚未推送</strong>的高信号候选，避免候选因为某天未过门槛，第二天又因“发布时间已过窗口”永久丢失。</li>
+<li>字段至少包含：<code>key</code>、<code>title</code>、<code>url</code>、<code>source</code>、<code>firstSeenAt</code>、<code>lastSeenAt</code>、<code>signals</code>、<code>decision</code>、<code>reason</code>。</li>
+<li>每天先复查最近 72 小时的候选；已推送则从活跃候选中移除或标记 <code>sent</code>，明确低价值则标记 <code>rejected</code> 并记录原因。</li>
+<li>对 GitHub 项目记录可核验的热度变化（stars、forks、release、HN/Reddit 讨论、独立复现）。热度不是质量证明，但快速跃迁是必须复查的信号。</li>
+</ul>
+<h3 id="_9">唯一键规则<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <p>按以下优先级生成 <code>key</code>：
 1. GitHub 项目：<code>github:&lt;owner&gt;/&lt;repo&gt;</code>，统一转小写并移除末尾 <code>/</code>。
 2. 有文章链接：规范化 URL；移除 <code>utm_*</code>、<code>ref</code> 等跟踪参数、fragment 和末尾 <code>/</code>，生成 <code>url:&lt;normalized-url&gt;</code>。
 3. 没有稳定链接：<code>title:&lt;source&gt;:&lt;normalized-title&gt;</code>；标题转小写、压缩空白并移除纯标点差异。</p>
-<h3 id="_9">每日流程<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h3 id="_10">每日流程<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
 <ol>
-<li>读取 <code>seen-items.jsonl</code>，建立已推送 key 集合。</li>
+<li>读取 <code>seen-items.jsonl</code> 建立已推送 key 集合，并读取 <code>candidate-items.jsonl</code> 复查最近 72 小时未决候选。</li>
 <li><strong>每天必须检查所有核心源</strong>，再按优先级检查常规源和扩展源。</li>
-<li>为候选内容记录标题、原始 URL、来源、发布日期和 key。</li>
+<li>为候选内容记录标题、原始 URL、来源、发布日期、首次发现时间、可核验热度信号和 key。</li>
 <li>排除账本中已有 key；同一事件被多个媒体转载时合并为一条，以官方原始链接为准。</li>
-<li>只保留有实际信息增量、且值得彦祖关注的内容；“仍在 Trending”不算更新，项目发布新版本或新增重要能力才算新事件。</li>
+<li>GitHub Trending 使用“首次观察”而不是仓库创建时间或 HN 发帖时间判断增量：仓库从未推送且今天首次发现，就属于新增候选；不得因仓库/讨论帖早于上次运行窗口而直接淘汰。</li>
+<li>对首次发现且与 AI/Agent/开发工具直接相关的高热项目，至少保留一个“新锐项目”席位。若出现约 1,000 stars/day、48 小时数千 stars、同日多次 release、HN 高热或独立复现等强信号，应推送并明确标注“早期、作者自测、待独立验证”，不能把证据不足误处理成完全不报。</li>
+<li>只保留有实际信息增量、且值得彦祖关注的内容；同一仓库连续处于 Trending 不算更新，项目发布新版本或新增重要能力才算新事件。</li>
+<li>高信号候选若暂不推送，必须写入 <code>candidate-items.jsonl</code> 并在未来 72 小时复查；不得只在日报正文写一句“未入选”后永久丢弃。</li>
 <li>生成并发送日报后，<strong>仅将实际发送的条目</strong>追加到 <code>seen-items.jsonl</code>。写文件或发送失败时不要更新账本。</li>
 <li>如果没有重要增量，只发送简短的“今日无值得推送的重要 AI 更新”，不得用旧内容或低价值内容凑数。</li>
 <li>采集失败的源跳过并在内部记录，不用旧缓存冒充今日更新，也不阻塞其他源。</li>
 </ol>
-<h3 id="_10">时间窗口<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<h3 id="_11">时间窗口<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <ul>
 <li>有明确发布时间的新闻、博客和论文，默认只考虑上次成功运行后发布的内容；首次建账时最多回看 72 小时。</li>
-<li>GitHub Trending 没有可靠发布时间，以“仓库是否从未推送过”为增量判断。</li>
+<li>GitHub Trending 没有可靠发布时间，以“仓库是否从未推送过、何时首次观察到”为增量判断；<strong>不得借用 HN/媒体帖发布时间否决一个从未推送过的 Trending 仓库</strong>。</li>
+<li>仓库在日报运行后创建、随后才开始爆发时，以首次观察日作为候选日。若当天未入选，进入 72 小时候选观察队列。</li>
 <li>旧事件出现真正的新进展时可再次报道，但必须使用代表新进展的新文章 URL，并在正文中明确说明新增了什么。</li>
 </ul>
 
