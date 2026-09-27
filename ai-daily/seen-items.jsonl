@@ -1590,3 +1590,5 @@
 {"key":"url:https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts","title":"Google Project Suncatcher 将 TPU 原型送入近地轨道测试","url":"https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/","source":"Google AI / Hacker News","firstSentAt":"2026-09-26T01:00:00Z"}
 {"key":"github:ollaya-dev/ollaya","title":"Ollaya：本地开放决策模型运行时","url":"https://github.com/ollaya-dev/ollaya","source":"Hacker News / GitHub","firstSentAt":"2026-09-26T01:00:00Z"}
 {"key":"github:nvidia/model-optimizer","title":"NVIDIA Model Optimizer 0.47.0","url":"https://github.com/NVIDIA/Model-Optimizer","source":"GitHub Trending / NVIDIA","firstSentAt":"2026-09-26T01:00:00Z"}
+{"key":"url:https://swarmtraces.org","title":"研究团队公开 OpenAI Agent 入侵 Hugging Face 的 8 万余条攻击轨迹","url":"https://swarmtraces.org/","source":"Swarm Traces / Hacker News","firstSentAt":"2026-09-27T01:00:00Z"}
+{"key":"github:mobile-next/mobile-mcp","title":"Mobile MCP：统一驱动 iOS/Android 的 MCP 服务器","url":"https://github.com/mobile-next/mobile-mcp","source":"GitHub Trending","firstSentAt":"2026-09-27T01:00:00Z"}
