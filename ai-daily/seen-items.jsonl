@@ -1594,3 +1594,6 @@
 {"key":"github:mobile-next/mobile-mcp","title":"Mobile MCP：统一驱动 iOS/Android 的 MCP 服务器","url":"https://github.com/mobile-next/mobile-mcp","source":"GitHub Trending","firstSentAt":"2026-09-27T01:00:00Z"}
 {"key":"url:https://fireworks.ai/blog/ember-1","title":"Fireworks 发布 Ember-1：以更短推理轨迹降低 Agent 成本","url":"https://fireworks.ai/blog/ember-1","source":"Fireworks AI / Hacker News","firstSentAt":"2026-09-28T01:00:00Z"}
 {"key":"github:mvschwarz/openrig","title":"OpenRig：统一管理 Claude Code 与 Codex 的多 Agent harness","url":"https://github.com/mvschwarz/openrig","source":"GitHub Trending","firstSentAt":"2026-09-28T01:00:00Z"}
+{"key":"url:https://www.anthropic.com/claude-sonnet-5-5","title":"Anthropic 发布 Claude Sonnet 5.5","url":"https://www.anthropic.com/claude-sonnet-5-5","source":"Anthropic / Hacker News","firstSentAt":"2026-09-29T01:00:00Z"}
+{"key":"url:https://huggingface.co/blog/hcompany/holo4","title":"H Company 开源 Holo4 通用计算机操作 Agent 模型","url":"https://huggingface.co/blog/Hcompany/holo4","source":"Hugging Face / H Company","firstSentAt":"2026-09-29T01:00:00Z"}
+{"key":"github:firelex/jeff","title":"Jeff：本地低延迟零样本分类与决策模型","url":"https://github.com/firelex/jeff","source":"Hacker News / GitHub","firstSentAt":"2026-09-29T01:00:00Z"}
