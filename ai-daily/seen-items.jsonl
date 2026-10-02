@@ -1607,3 +1607,7 @@
 {"key":"url:https://huggingface.co/blog/open-tts-leaderboard","title":"Hugging Face 发布 Open TTS Leaderboard","url":"https://huggingface.co/blog/open-tts-leaderboard","source":"Hugging Face","firstSentAt":"2026-10-01T01:00:00Z"}
 {"key":"github:ninjahawk/livenerf","title":"livenerf：模型上线后能力漂移监测基准","url":"https://github.com/ninjahawk/livenerf","source":"Hacker News / GitHub","firstSentAt":"2026-10-01T01:00:00Z"}
 {"key":"github:posthog/jeeves","title":"Jeeves：带推理能力的本地概率决策模型","url":"https://github.com/PostHog/jeeves","source":"Hacker News / GitHub","firstSentAt":"2026-10-01T01:00:00Z"}
+{"key":"url:https://blog.cloudflare.com/clef-decision-models","title":"Cloudflare 发布 Clef / Clef-flash 开放权重决策模型","url":"https://blog.cloudflare.com/clef-decision-models/","source":"Cloudflare / Hacker News","firstSentAt":"2026-10-02T01:00:00Z"}
+{"key":"url:https://earendil.com/posts/pi-1-0","title":"Pi 1.0 与实验性 Pi Durable 发布","url":"https://earendil.com/posts/pi-1-0/","source":"Earendil / Hacker News / GitHub","firstSentAt":"2026-10-02T01:00:00Z"}
+{"key":"url:https://earendil.com/posts/pi-durable","title":"Pi Durable：可恢复的长期 Agent harness","url":"https://earendil.com/posts/pi-durable/","source":"Earendil / Hacker News","firstSentAt":"2026-10-02T01:00:00Z"}
+{"key":"url:https://huggingface.co/blog/allenai/olmocore3","title":"Allen Institute 发布 Olmo-core 3 MoE 训练基础设施","url":"https://huggingface.co/blog/allenai/olmocore3","source":"Hugging Face / Ai2","firstSentAt":"2026-10-02T01:00:00Z"}
