@@ -1611,3 +1611,8 @@
 {"key":"url:https://earendil.com/posts/pi-1-0","title":"Pi 1.0 与实验性 Pi Durable 发布","url":"https://earendil.com/posts/pi-1-0/","source":"Earendil / Hacker News / GitHub","firstSentAt":"2026-10-02T01:00:00Z"}
 {"key":"url:https://earendil.com/posts/pi-durable","title":"Pi Durable：可恢复的长期 Agent harness","url":"https://earendil.com/posts/pi-durable/","source":"Earendil / Hacker News","firstSentAt":"2026-10-02T01:00:00Z"}
 {"key":"url:https://huggingface.co/blog/allenai/olmocore3","title":"Allen Institute 发布 Olmo-core 3 MoE 训练基础设施","url":"https://huggingface.co/blog/allenai/olmocore3","source":"Hugging Face / Ai2","firstSentAt":"2026-10-02T01:00:00Z"}
+{"key":"url:https://openai.com/index/practical-guide-building-gpt-6","title":"OpenAI 发布 GPT-6 系列生产指南","url":"https://openai.com/index/practical-guide-building-gpt-6/","source":"OpenAI","firstSentAt":"2026-10-03T01:00:00Z"}
+{"key":"url:https://huggingface.co/blog/servicenow-ai/autosynthdata","title":"AutoSynthData：从 Agent 失败生成可验证训练任务","url":"https://huggingface.co/blog/ServiceNow-AI/autosynthdata","source":"Hugging Face / ServiceNow","firstSentAt":"2026-10-03T01:00:00Z"}
+{"key":"url:https://huggingface.co/blog/allenai/astabrief","title":"Ai2 开源 AstaBrief 8B 科研报告生成模型","url":"https://huggingface.co/blog/allenai/astabrief","source":"Hugging Face / Ai2","firstSentAt":"2026-10-03T01:00:00Z"}
+{"key":"github:antirez/ds4","title":"antirez/ds4：面向本地前沿模型的窄推理引擎","url":"https://github.com/antirez/ds4","source":"Hacker News / GitHub","firstSentAt":"2026-10-03T01:00:00Z"}
+{"key":"github:juliusbrussee/caveman","title":"JuliusBrussee/caveman：Agent 输出与工具上下文压缩层","url":"https://github.com/JuliusBrussee/caveman","source":"GitHub Trending","firstSentAt":"2026-10-03T01:00:00Z"}
