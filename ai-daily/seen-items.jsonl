@@ -1640,3 +1640,9 @@
 {"key":"github:morluto/rea","title":"morluto/rea：Agent 逆向工程 MCP/CLI","url":"https://github.com/morluto/rea","source":"GitHub Trending","firstSentAt":"2026-10-07T01:00:00Z"}
 {"key":"github:fesens/opentpu","title":"FeSens/openTPU：开源 FPGA AI 加速器","url":"https://github.com/FeSens/openTPU","source":"Hacker News / GitHub","firstSentAt":"2026-10-07T01:00:00Z"}
 {"key":"github:pbakaus/impeccable","title":"pbakaus/impeccable：Coding Agent 设计 skill 与 UI 检测器","url":"https://github.com/pbakaus/impeccable","source":"GitHub Trending","firstSentAt":"2026-10-07T01:00:00Z"}
+{"key":"url:https://www.anthropic.com/claude-haiku-5-5","title":"Claude Haiku 5.5：更低价的高频 Agent 子任务模型","url":"https://www.anthropic.com/claude-haiku-5-5","source":"Anthropic News","firstSentAt":"2026-10-08T01:00:00Z"}
+{"key":"url:https://openai.com/index/gpt-6-for-everyone","title":"GPT-6 与 Intelligent UI 向 ChatGPT 全量用户开放","url":"https://openai.com/index/gpt-6-for-everyone/","source":"OpenAI","firstSentAt":"2026-10-08T01:00:00Z"}
+{"key":"url:https://claude.dev/blog/automating-eval-design-and-hillclimbing","title":"Anthropic 用 claude-api skill 自动构建 eval 与 hillclimb","url":"https://claude.dev/blog/automating-eval-design-and-hillclimbing/","source":"Claude Blog","firstSentAt":"2026-10-08T01:00:00Z"}
+{"key":"url:https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026","title":"Nemotron 专项模型在 IOI 与 IMO 达到金牌级结果","url":"https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026","source":"Hugging Face / NVIDIA","firstSentAt":"2026-10-08T01:00:00Z"}
+{"key":"github:strands-labs/strands-decider","title":"Strands Decider 2B：本地开源决策模型","url":"https://github.com/strands-labs/strands-decider","source":"Hacker News / GitHub","firstSentAt":"2026-10-08T01:00:00Z"}
+{"key":"github:mattpocock/skills","title":"Skills for Real Engineers：可组合的软件工程 Agent skills","url":"https://github.com/mattpocock/skills","source":"GitHub Trending","firstSentAt":"2026-10-08T01:00:00Z"}
