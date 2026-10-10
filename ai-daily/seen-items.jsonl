@@ -1654,3 +1654,7 @@
 {"key":"url:https://openai.com/index/disrupting-ai-enabled-false-front-operations","title":"OpenAI 披露 AI 辅助的假前台影响行动","url":"https://openai.com/index/disrupting-ai-enabled-false-front-operations/","source":"OpenAI","firstSentAt":"2026-10-09T01:00:00Z"}
 {"key":"github:docker/docker-agent","title":"Docker Agent：声明式 Agent builder/runtime","url":"https://github.com/docker/docker-agent","source":"Hacker News / GitHub","firstSentAt":"2026-10-09T01:00:00Z"}
 {"key":"github:pingdotgg/ts-rust","title":"ts-rust：Agent 生成的 TypeScript 编译器 Rust 移植实验","url":"https://github.com/pingdotgg/ts-rust","source":"Hacker News / GitHub","firstSentAt":"2026-10-09T01:00:00Z"}
+{"key":"url:https://typesafe.ai/blog/series-ai","title":"TypeSafe AI 完成 8.7 亿美元 Series A","url":"https://typesafe.ai/blog/series-ai","source":"TypeSafe AI / Hacker News","firstSentAt":"2026-10-10T01:00:00Z"}
+{"key":"url:https://huggingface.co/blog/allenai/impactful-scheduling","title":"Ai2 公开 GPU 集群预算与公平份额调度实践","url":"https://huggingface.co/blog/allenai/impactful-scheduling","source":"Hugging Face / Ai2","firstSentAt":"2026-10-10T01:00:00Z"}
+{"key":"github:franzenzenhofer/big-arrow-on-the-screen","title":"big-arrow-on-the-screen：Agent 人工接管指引工具","url":"https://github.com/franzenzenhofer/big-arrow-on-the-screen","source":"Hacker News / GitHub","firstSentAt":"2026-10-10T01:00:00Z"}
+{"key":"github:berriai/litellm","title":"LiteLLM：多模型 gateway 与 guardrail 层","url":"https://github.com/BerriAI/litellm","source":"GitHub Trending","firstSentAt":"2026-10-10T01:00:00Z"}
