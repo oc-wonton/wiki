@@ -1658,3 +1658,6 @@
 {"key":"url:https://huggingface.co/blog/allenai/impactful-scheduling","title":"Ai2 公开 GPU 集群预算与公平份额调度实践","url":"https://huggingface.co/blog/allenai/impactful-scheduling","source":"Hugging Face / Ai2","firstSentAt":"2026-10-10T01:00:00Z"}
 {"key":"github:franzenzenhofer/big-arrow-on-the-screen","title":"big-arrow-on-the-screen：Agent 人工接管指引工具","url":"https://github.com/franzenzenhofer/big-arrow-on-the-screen","source":"Hacker News / GitHub","firstSentAt":"2026-10-10T01:00:00Z"}
 {"key":"github:berriai/litellm","title":"LiteLLM：多模型 gateway 与 guardrail 层","url":"https://github.com/BerriAI/litellm","source":"GitHub Trending","firstSentAt":"2026-10-10T01:00:00Z"}
+{"key":"url:https://github.com/openclaw/openclaw/releases/tag/v2026.10.1","title":"OpenClaw 2026.10.1 正式版发布","url":"https://github.com/openclaw/openclaw/releases/tag/v2026.10.1","source":"OpenClaw Releases","firstSentAt":"2026-10-11T01:00:00Z"}
+{"key":"url:https://claude.dev/blog/building-effective-agent-automations","title":"Anthropic 公开定时 Agent 自动化参考实现","url":"https://claude.dev/blog/building-effective-agent-automations/","source":"Claude Blog","firstSentAt":"2026-10-11T01:00:00Z"}
+{"key":"github:rociiu/talorys","title":"Talorys：部署在自有 Cloudflare 账户的个人 AI Agent","url":"https://github.com/rociiu/talorys","source":"Hacker News / GitHub","firstSentAt":"2026-10-11T01:00:00Z"}
