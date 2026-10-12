@@ -1399,6 +1399,7 @@
 <h3 id="_4">产品 &amp; 工具<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong><a href="https://github.com/opennookorg/betterwispr">opennookorg/betterwispr</a></strong> — 10 月 7 日创建，约 4 天获得 189 stars / 13 forks，Hacker News 约 146 points / 92 comments；Apache-2.0，10 月 9 日已发布 <code>v0.1.4</code>。它是 macOS 本地优先听写工具，支持 Whisper、Parakeet、Apple Speech、离线转写、应用级语气、词汇纠错和本地会议纪要，并用 Sparkle EdDSA 签名更新。新锐信号来自短时间采用、讨论和完整 release，但仍是 0.1.x、主要面向 macOS；自动粘贴需要 Accessibility，会议转写涉及麦克风与系统音频，隐私和权限声明仍需源码级验证。这是今日新锐项目席位。</li>
+<li><strong><a href="https://github.com/morluto/rea/releases/tag/rea-agents-6.4.0">REA 6.4.0：Agent 逆向工程工具链从“静态分析桥”快速扩展到设备与大型证据工作流</a></strong> — 我们 10 月 7 日首次推送时，REA 约 9.5K stars、版本 4.1.0；五天后已约 126K stars / 28K forks，并连续发布 5.0–6.4。6.4 新增 Android 设备检查、split APK 获取、日志/截图/文件传输、JEB MCP、Ghidra PE DLL/MIPS、RPC 发现、Pi/Hermes/Qwen Code 接入，以及大型 Evidence 的摘要与按需读取。这个变化足以重新评估，但版本迭代包含频繁 breaking changes，运行时捕获会以当前用户权限执行目标，仍只适合授权样本和隔离环境。</li>
 </ul>
 <h3 id="_5">公司 &amp; 融资<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1409,7 +1410,7 @@
 <li><strong><a href="https://github.com/SakanaAI/mass">SakanaAI/mass</a></strong> — 今日首次推送，官方仓库约 49 stars / 2 forks，Python；提供 MASS 的代码与实验材料。它对 Agent harness 的价值在于工作流搜索、交付契约和团队轨迹蒸馏，而非当前 star 热度。主要风险是仓库暂无明确许可证、研究规模小、外部评审仍由模型完成，且软件工程 benchmark 未获正迁移；适合读方法，不适合直接把“递归自我改进”当成熟能力。</li>
 <li><strong><a href="https://github.com/opennookorg/betterwispr">opennookorg/betterwispr</a></strong> — 今日首次观察并推送；项目虽未到千星级爆发，但“新建约 4 天 + 正式 release + 高热 HN 讨论 + 清晰本地隐私用途”组成足够的新锐信号。成熟度仍是早期 0.1.x，建议源码构建或隔离测试，不直接授予全局 Accessibility 与长期音频权限。</li>
 <li><strong>72 小时观察：<a href="https://github.com/bilawalsidhu/gods-eye-view">bilawalsidhu/gods-eye-view</a></strong> — 今日首次观察进入 Trending，约 51.7K stars / 10.4K forks，页面显示约 886 stars/day；实时开源空间情报与 3D 地球可视化很强，但与当前 AI/Agent 工作的直接相关性有限，许可证元数据为 <code>NOASSERTION</code>，且地理定位数据的隐私与滥用边界较大，暂不推送，进入 72 小时复查队列。</li>
-<li>GitHub Trending 中 <code>morluto/rea</code>、<code>cathrynlavery/diagram-design</code>、<code>lyogavin/airllm</code> 已在历史账本出现，连续上榜不重复；<code>storytold/artcraft</code> 也没有出现足以改变此前取舍的新事件。</li>
+<li>GitHub Trending 中 <code>cathrynlavery/diagram-design</code>、<code>lyogavin/airllm</code> 已在历史账本出现且没有改变采用判断的新事件；<code>morluto/rea</code> 虽已推送，但 stars 在五天内增长超过 10 倍并出现 5.0/6.0 两个 major 与 6.4.0 大版本能力更新，因此按“重大新进展”使用 release URL 再次报道。<code>storytold/artcraft</code> 仍没有足以改变此前取舍的新事件。</li>
 <li>Hacker News 原站继续返回 419，已用 Algolia API 核验：游戏反编译实践约 148 points / 107 comments，BetterWispr 约 146 / 92。Product Hunt 与量子位返回 403，36kr 停在安全检查页，Google AI 列表页未稳定提取文章卡片；失败源没有用旧缓存冒充今日更新。</li>
 </ul>
 <hr />
@@ -1418,6 +1419,7 @@
 <li><strong>给高风险 Agent 任务先找 oracle，再谈多 Agent。</strong> 对可编译、可回放、可比较的工作，优先设计确定性验收和防篡改检查；worker 的解释不能替代独立验证，reviewer 也不应把待审代码中的注释当可信证据。</li>
 <li><strong>把 MASS 的“契约 + 调用顺序”纳入 OpenClaw 子任务评测。</strong> 选 3–5 个现有多 Agent 任务，固定输入和验收，比较角色型 prompt 与产物契约型 prompt 的成功率、返工率、token 和人工干预，不先做模型微调。</li>
 <li><strong>BetterWispr 只做隔离 Mac 试用。</strong> 若需要本地语音输入，从源码或已签名 release 验证离线模型、历史保存、更新签名、Accessibility 范围和会议录音提示；不在未审计前接入敏感会议。</li>
+<li><strong>REA 值得重新做一次只读 Spike，但只用授权 fixture。</strong> 优先测试静态 JavaScript/Electron、APK 和 Evidence 摘要/按需读取；不运行未知二进制、不把真实商业软件上传给模型、不授予 ADB/IDA/Hopper 对私人项目或真实设备的宽权限。</li>
 <li><strong>不要把 token 吞吐当进度。</strong> 反编译案例说明“能启动、PR 很多、代码可读”都可能是伪进度；日报自动化和编码 Agent 都应优先报告可机器验收的结果比例。</li>
 </ul>
 <hr />
