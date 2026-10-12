@@ -1661,3 +1661,6 @@
 {"key":"url:https://github.com/openclaw/openclaw/releases/tag/v2026.10.1","title":"OpenClaw 2026.10.1 正式版发布","url":"https://github.com/openclaw/openclaw/releases/tag/v2026.10.1","source":"OpenClaw Releases","firstSentAt":"2026-10-11T01:00:00Z"}
 {"key":"url:https://claude.dev/blog/building-effective-agent-automations","title":"Anthropic 公开定时 Agent 自动化参考实现","url":"https://claude.dev/blog/building-effective-agent-automations/","source":"Claude Blog","firstSentAt":"2026-10-11T01:00:00Z"}
 {"key":"github:rociiu/talorys","title":"Talorys：部署在自有 Cloudflare 账户的个人 AI Agent","url":"https://github.com/rociiu/talorys","source":"Hacker News / GitHub","firstSentAt":"2026-10-11T01:00:00Z"}
+{"key":"github:sakanaai/mass","title":"SakanaAI/mass：多 Agent 自我监督与工作流蒸馏","url":"https://github.com/SakanaAI/mass","source":"Sakana AI / GitHub","firstSentAt":"2026-10-12T01:00:00Z"}
+{"key":"url:https://momo5502.com/posts/2026-10-09-game-decompilation","title":"500B+ token 多 Agent 游戏反编译实践复盘","url":"https://momo5502.com/posts/2026-10-09-game-decompilation/","source":"Hacker News / momo5502","firstSentAt":"2026-10-12T01:00:00Z"}
+{"key":"github:opennookorg/betterwispr","title":"BetterWispr：macOS 本地优先开源听写工具","url":"https://github.com/opennookorg/betterwispr","source":"Hacker News / GitHub","firstSentAt":"2026-10-12T01:00:00Z"}
